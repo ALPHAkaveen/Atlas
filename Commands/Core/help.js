@@ -29,7 +29,7 @@ module.exports = {
   
   let textHelpMenu = `Konnichiwa *${pushName}* Senpai,
   
-  I am *${botName}*, a bot developed by *Team Atlas*.
+  I am *${botName}*, a bot developed by *cyber yakuza tem*.
   
   🦠 My prefix is: *${prefix}*
   
