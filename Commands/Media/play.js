@@ -33,19 +33,16 @@ module.exports = {
     ];
     let buttonMessage = {
       image: { url: song.thumbnail },
-      caption: `
-           *『  ${botName} Media Player  』*
+      caption: `*DARK NERO SONG DOWNLOADER*
+*SONG NAME :* _${song.title}_
 
+*DURATION :* _${song.timestamp}_
 
-*Song name :* _${song.title}_
+*UPLOADED :* _${song.ago}_
 
-*Duration :* _${song.timestamp}_
+*CHANNEL :* _${song.author.name}_
 
-*Uploaded :* _${song.ago}_
-
-*Channel :* _${song.author.name}_
-
-*Url :* _${song.url}_\n`,
+*URL :* _${song.url}_\n`,
       footer: `*${botName}*`,
       buttons: buttons,
       headerType: 4,
