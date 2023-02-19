@@ -259,7 +259,7 @@ module.exports = {
       },
     ];
     let buttonMessage = {
-      video: botVideo, gifPlayback: true,
+      image: botVideo,
       caption: textHelpMenu,
       buttons: buttons,
       headerType: 4,
