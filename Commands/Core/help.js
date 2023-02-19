@@ -245,7 +245,7 @@ module.exports = {
   }
             
   textHelpMenu +=`*🔰  ${botName}  🔰*
-   _Powered By:_ *Team ATLAS*
+   _Powered By:_ *Cyber Yakuza tem*
   🦠 To use any of these commands type 
   " *${prefix}Command name* ".
   💧 To get Support Group link type " *${prefix}support* ".
