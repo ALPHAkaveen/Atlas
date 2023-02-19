@@ -3,8 +3,8 @@ const { mkchar } = require("./Database/dataschema.js");
 
 
 global.charID0 = {
-    botName : "Dark Nero",
-    botVideo : fs.readFileSync("./Assets/atlas.mp4"),
+    botName : "DARK NERO",
+    botVideo :  "https://telegra.ph/file/ebba40fadf5fb0db62e00.jpg",
     botImage1 : "https://i.imgur.com/MClOeqe.jpeg",
     botImage2 : "https://i.imgur.com/MClOeqe.jpeg",
     botImage3 : "https://i.imgur.com/MClOeqe.jpeg",
