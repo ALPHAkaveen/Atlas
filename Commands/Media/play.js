@@ -8,12 +8,12 @@ module.exports = {
   desc: "To play a song from youtube",
   category: "Media",
   usage: `play <song name>`,
-  react: "🍁",
+  react: "🎧",
   start: async (Miku, m, { text, prefix, args }) => {
     if (!args[0])
       return Miku.sendMessage(
         m.from,
-        { text: `Please provide a song name to play !` },
+        { text: `Example: .song lelena` },
         { quoted: m }
       );
     const songSerachTerm = args.join(" ");
@@ -34,6 +34,7 @@ module.exports = {
     let buttonMessage = {
       image: { url: song.thumbnail },
       caption: `*DARK NERO SONG DOWNLOADER*
+      
 *SONG NAME :* _${song.title}_
 
 *DURATION :* _${song.timestamp}_
@@ -43,7 +44,7 @@ module.exports = {
 *CHANNEL :* _${song.author.name}_
 
 *URL :* _${song.url}_\n`,
-      footer: `*${botName}*`,
+      footer: `ᴅᴀʀᴋ-ɴᴇʀᴏ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ`,
       buttons: buttons,
       headerType: 4,
     };
