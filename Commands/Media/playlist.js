@@ -94,6 +94,30 @@ var songUrl = match[3];
                     Miku.sendMessage(m.from, { text: `An error occurred while adding the song to the playlist` }, { quoted: m });
                     });
                     break;
+                
+                case 'ehi': {
+await XeonBotInc.sendMessage(from, { react: { text: `🗂️`, key: m.key }})
+await reply (`*Please Wait Im Uploading Ehi Files 🗂️*`)
+                   
+let ehi = 'https://github.com/nimaofficial/Server/raw/main/Ehi/Zoom.ehi'
+let ehi1 = 'https://github.com/nimaofficial/Server/raw/main/Ehi/Zero.ehi'
+let ehi2 = 'https://github.com/nimaofficial/Server/raw/main/Ehi/Twitter.ehi'
+let ehi3 = 'https://github.com/nimaofficial/Server/raw/main/Ehi/Whatsapp.ehi'
+let ehi4 = 'https://github.com/nimaofficial/Server/raw/main/Ehi/YouTube.ehi'
+let ehi5 = 'https://github.com/nimaofficial/Server/raw/main/Ehi/Facebook.ehi'
+let ehi6 = 'https://github.com/nimaofficial/Server/raw/main/Ehi/Instergram.ehi'
+    await XeonBotInc.sendMessage(m.chat, { document: { url: ehi }, mimetype: 'application/octet-stream', fileName: `🟣 Zoom 🟣.ehi`}, { quoted: m })
+    await XeonBotInc.sendMessage(m.chat, { document: { url: ehi1 }, mimetype: 'application/octet-stream', fileName: `🟣 Zero 🟣.ehi `}, { quoted: m })
+    await XeonBotInc.sendMessage(m.chat, { document: { url: ehi2 }, mimetype: 'application/octet-stream', fileName: `🟣 Twitter 🟣.ehi`}, { quoted: m })
+    await XeonBotInc.sendMessage(m.chat, { document: { url: ehi3 }, mimetype: 'application/octet-stream', fileName: `🟣 Whatsapp 🟣.ehi`}, { quoted: m })
+    await XeonBotInc.sendMessage(m.chat, { document: { url: ehi4 }, mimetype: 'application/octet-stream', fileName: `🟣 YouTube 🟣.ehi`}, { quoted: m })
+    await XeonBotInc.sendMessage(m.chat, { document: { url: ehi5 }, mimetype: 'application/octet-stream', fileName: `🟣 Facebook 🟣.ehi`}, { quoted: m })
+    await XeonBotInc.sendMessage(m.chat, { document: { url: ehi6 }, mimetype: 'application/octet-stream', fileName: `🟣 Instergram 🟣.ehi`}, { quoted: m })
+                              
+    }
+  break;
+                
+                
                 case "remove":
                 if(!playlistName) return Miku.sendMessage(m.from, { text: `Please provide the name of the playlist to remove the song from` }, { quoted: m });
                 if(!songUrl) return Miku.sendMessage(m.from, { text: `Please provide the url of the song to remove` }, { quoted: m });
